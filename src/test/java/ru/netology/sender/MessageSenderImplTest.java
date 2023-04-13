@@ -38,8 +38,9 @@ class MessageSenderImplTest {
         Assertions.assertEquals(expected, actual);
 
     }
+
     @Test
-    void sendTestEnglish(){
+    void sendTestEnglish() {
         String expected = "Welcome";
         GeoServiceImpl gsi = Mockito.mock(GeoServiceImpl.class);
         Mockito.when(gsi.byIp(NEW_YORK_IP)).thenReturn(new Location("Nevada", Country.USA, "tomsona", 3));
